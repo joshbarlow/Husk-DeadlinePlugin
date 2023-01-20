@@ -62,13 +62,10 @@ class HuskPlugin( DeadlinePlugin ):
 
         renderArguments = "-f %s -n %s -i 1 -Va2" % ( startFrame,numFrames ) + " " + renderArguments
 
-        ##outputFilename = self.GetPluginInfoEntryWithDefault( "OutputFilename", "" )
-        ##if outputFilename != "":
-        ##    renderArguments += "-file \"%s\"" % outputFilename
+        renderDelagate = self.GetPluginInfoEntryWithDefault( "renderDelagate", "" )
+        if outputFilename != "":
+            renderArguments = "-R %s "  % ( renderDelagate ) + renderArguments
+        
+        ## karma is BRAY_HdKarma
 
         return renderArguments
-        
-        ##sceneFile = self.GetPluginInfoEntryWithDefault( "SceneFile", self.GetDataFilename() )
-        ##return "-Va2 " + sceneFile
-        
-        ##return "-Va2 E:\\Projects\\0008_usd_testing\\geo\\test_render.usd"
