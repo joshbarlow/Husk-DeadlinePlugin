@@ -1,0 +1,26 @@
+[About]
+Type=label
+Label=About
+Category=About Plugin
+CategoryOrder=-1
+Index=0
+Default=Houdini Husk Plugin for Deadline
+Description=Not configurable
+
+[ConcurrentTasks]
+Type=label
+Label=ConcurrentTasks
+Category=About Plugin
+CategoryOrder=-1
+Index=0
+Default=True
+Description=Not configurable
+
+[Husk_Executable]
+Type=multilinemultifilename
+Category=Render Executables
+CategoryOrder=0
+Index=0
+Label=Silhouette 5 Executable
+Description=The path to the Silhouette executable file used for rendering. Enter alternative paths on separate lines.
+Default=C:\Program Files\Side Effects Software\Houdini 19.5.303\bin\husk.exe
