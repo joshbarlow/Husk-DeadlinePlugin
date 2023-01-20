@@ -63,7 +63,7 @@ class HuskPlugin( DeadlinePlugin ):
         renderArguments = "-f %s -n %s -i 1 -Va2" % ( startFrame,numFrames ) + " " + renderArguments
 
         renderDelagate = self.GetPluginInfoEntryWithDefault( "renderDelagate", "" )
-        if outputFilename != "":
+        if renderDelagate != "":
             renderArguments = "-R %s "  % ( renderDelagate ) + renderArguments
         
         ## karma is BRAY_HdKarma
